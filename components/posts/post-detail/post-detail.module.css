@@ -1,0 +1,134 @@
+
+.post{  
+  background: whitesmoke;
+  border-radius: .8rem;
+  margin: auto;
+  margin-block: 3rem;
+  max-width: 960px;
+  width: 92.5vw;
+  padding: 5rem 3rem 2.5rem 3rem;
+}
+
+
+.post-head {
+  padding-bottom: var(--size-8);
+  border-bottom: 8px solid var(--color-primary-100);
+  margin: var(--size-4) 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-head h1 { 
+  font-size: 2.4rem;
+  color: var(--color-primary-500);
+  margin: 0;
+  line-height: initial;
+  text-align: center;
+}
+
+.post-head img {
+  object-fit: cover;
+  width: 200px;
+  height: 120px;
+}
+
+
+
+
+.post-detail{
+
+}
+
+.post-detail *{  
+  all: revert; 
+  font-family: 'Roboto', sans-serif;  
+}
+ 
+.post-detail h1,
+.post-detail h2,
+.post-detail h3,
+.post-detail h4,
+.post-detail h5,
+.post-detail h6{
+  font-family: 'Oswald', 'Roboto', sans-serif;
+}
+
+.post-detail h1{
+  font-size: 3rem;
+}
+.post-detail h2{
+  font-size: 2.6rem;
+}
+
+.post-detail h3{
+  font-size: 2.2rem;
+}
+.post-detail h4{
+  font-size: 2rem;
+}
+.post-detail h5{
+  font-size: 1.8rem;
+}
+.post-detail h6{
+  font-size: 1.6rem;
+}
+
+.post-detail blockquote{ 
+  background: #ffe5644d;
+  border-left: 1rem solid #fafa79 ;
+  margin: 20px -5px 30px;
+  padding: 15px 30px 15px 25px;
+}
+ 
+.post-detail p,
+.post-detail ul{ 
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.code-block *{  
+  all: revert;
+  font-family: monospace;
+  font-size: 1.6rem; 
+}
+
+.code{
+  background-color: var(--color-grey-50);
+  border: 1px solid var(--color-grey-200);
+  padding-inline: .4rem;
+  border-radius: .4rem;
+  font-family: monospace;
+  font-size: 1.8rem;
+}
+ 
+.image{ 
+}
+
+.image > div{ 
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+ 
+
+@media (max-width: 768px){
+  .post{ 
+    padding: 3rem 1.5rem;
+  } 
+}
+
+@media (min-width: 768px) {
+  .post-head {
+    margin: var(--size-8) 0;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .post-head h1 {
+    font-size: var(--size-16);
+    text-align: left;
+  }
+}

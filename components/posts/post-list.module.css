@@ -1,0 +1,20 @@
+.posts{ 
+  width: 89vw;
+  max-width: 95rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.posts h1{
+  font-size: 6.5rem;
+  text-align: center;
+  color: var(--color-grey-800);
+  margin-block: 7rem;
+}
+
+@media (max-width: 768px){
+  .posts h1{
+    font-size: 3.2rem;
+    margin-block: 3rem;
+  }
+}

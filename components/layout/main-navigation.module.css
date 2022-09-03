@@ -1,0 +1,32 @@
+.header{
+  color: var(--color-grey-50);
+  background-color: var(--color-grey-900);
+  padding: 3.2rem 10%;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 3.2rem;
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px){
+  .logo{
+    font-size: 2rem;
+  }
+
+  .nav ul{
+    font-size: 1.6rem;
+  }
+}

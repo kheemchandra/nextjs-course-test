@@ -1,0 +1,44 @@
+.notification{
+  position: fixed;
+  bottom: 0; 
+  width: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-grey-800);
+  color: var(--color-grey-100);
+  padding: 2.6rem 4rem;  
+  border-radius: .5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.notification h1{
+  font-size: 2.5rem; 
+}
+
+.pending{
+  background-color: var(--color-grey-800);
+  color: white;
+}
+
+.success{
+  background-color: var(--color-success-500); 
+  color: var(--color-grey-800);
+}
+
+.error{
+  background-color: var(--color-error-500); 
+  color: white;
+}
+
+
+
+@media (max-width: 768px){
+  .notification{ 
+    width: 100vw; 
+  }
+} 

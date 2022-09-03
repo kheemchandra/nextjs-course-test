@@ -1,0 +1,35 @@
+.hero{
+  background-color: var(--color-grey-900);
+  text-align: center; 
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+}
+
+.image{margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--color-grey-700);
+  overflow: hidden;
+}
+
+.image img{
+  width: 400px;
+  height: 400px; 
+}
+
+.about{
+  color: var(--color-grey-400);  
+  max-width: 600px; 
+  margin: auto; 
+  padding-inline: 2rem;
+}
+
+.about h1{
+  font-size: 6rem;
+  margin-block: 3rem;
+}
+
+.about p{
+  font-size: 2.4rem;
+}
