@@ -19,10 +19,10 @@ export default async function handler(req, res) {
 
     let client;
 
+    let connnectionString = `mongodb+srv://${process.env.database_user}:${process.env.database_password}@${process.env.database_cluster}.ldo1rpm.mongodb.net/${process.env.database_name}?retryWrites=true&w=majority`;
+
     try {
-      client = await MongoClient.connect(
-        "mongodb+srv://kheem:kheem@cluster0.ldo1rpm.mongodb.net/my-site-test?retryWrites=true&w=majority"
-      );
+      client = await MongoClient.connect(connnectionString);
     } catch (error) {
       res.status(500).json({ message: "Couldn't connect to database!" });
       return;
