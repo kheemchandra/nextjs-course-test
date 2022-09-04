@@ -33,7 +33,7 @@ function NewMessage(props) {
 
     try {
       setNotification({
-        title: 'Sending message!',
+        title: 'Sending message!!!!',
         message: 'Your message is on the way.',
         status: 'pending'
       });
